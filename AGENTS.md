@@ -80,7 +80,7 @@ Any `<style>` tag added to an `.astro` file must re-declare that order and place
 its rules in the appropriate layer:
 
 ```astro
-<style is:global>
+<style>
 @layer base, component, utility;
 
 @layer component {
