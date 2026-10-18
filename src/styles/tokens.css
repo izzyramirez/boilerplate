@@ -290,222 +290,217 @@
    --tracking-widest: 0.1em;
 
    /* Spacing */
-   /* -- Fluid */
+   /* -- Static */
    --space-2: 0.125rem;
    --space-4: 0.25rem;
    --space-6: 0.375rem;
    --space-8: 0.5rem;
-   --space-12: clamp(
-      0.625rem,
+   --space-12: 0.75rem;
+   --space-16: 1rem;
+
+   /* -- Fluid */
+   --space-20: clamp(
+      1.125rem,
       calc(
          (
-               0.625 - (0.75 - 0.625) /
+               1.125 - (1.25 - 1.125) /
                   (var(--fluid-max-w) - var(--fluid-min-w)) * var(--fluid-min-w)
             ) *
-            1rem + (0.75 - 0.625) / (var(--fluid-max-w) - var(--fluid-min-w)) *
-            100vw
-      ),
-      0.75rem
-   );
-   --space-16: clamp(
-      0.75rem,
-      calc(
-         (
-               0.75 - (1 - 0.75) / (var(--fluid-max-w) - var(--fluid-min-w)) *
-                  var(--fluid-min-w)
-            ) *
-            1rem + (1 - 0.75) / (var(--fluid-max-w) - var(--fluid-min-w)) *
-            100vw
-      ),
-      1rem
-   );
-   --space-20: clamp(
-      1rem,
-      calc(
-         (
-               1 - (1.25 - 1) / (var(--fluid-max-w) - var(--fluid-min-w)) *
-                  var(--fluid-min-w)
-            ) *
-            1rem + (1.25 - 1) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+            1rem + (1.25 - 1.125) / (var(--fluid-max-w) - var(--fluid-min-w)) *
             100vw
       ),
       1.25rem
    );
    --space-24: clamp(
-      1.125rem,
+      1.3125rem,
       calc(
          (
-               1.125 - (1.5 - 1.125) /
+               1.3125 - (1.5 - 1.3125) /
                   (var(--fluid-max-w) - var(--fluid-min-w)) * var(--fluid-min-w)
             ) *
-            1rem + (1.5 - 1.125) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+            1rem + (1.5 - 1.3125) / (var(--fluid-max-w) - var(--fluid-min-w)) *
             100vw
       ),
       1.5rem
    );
    --space-28: clamp(
-      1.25rem,
+      1.5rem,
       calc(
          (
-               1.25 - (1.75 - 1.25) /
-                  (var(--fluid-max-w) - var(--fluid-min-w)) * var(--fluid-min-w)
+               1.5 - (1.75 - 1.5) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+                  var(--fluid-min-w)
             ) *
-            1rem + (1.75 - 1.25) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+            1rem + (1.75 - 1.5) / (var(--fluid-max-w) - var(--fluid-min-w)) *
             100vw
       ),
       1.75rem
    );
    --space-32: clamp(
-      1.5rem,
+      1.6875rem,
       calc(
          (
-               1.5 - (2 - 1.5) / (var(--fluid-max-w) - var(--fluid-min-w)) *
-                  var(--fluid-min-w)
+               1.6875 - (2 - 1.6875) /
+                  (var(--fluid-max-w) - var(--fluid-min-w)) * var(--fluid-min-w)
             ) *
-            1rem + (2 - 1.5) / (var(--fluid-max-w) - var(--fluid-min-w)) * 100vw
+            1rem + (2 - 1.6875) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+            100vw
       ),
       2rem
    );
    --space-36: clamp(
-      1.625rem,
+      1.875rem,
       calc(
          (
-               1.625 - (2.25 - 1.625) /
+               1.875 - (2.25 - 1.875) /
                   (var(--fluid-max-w) - var(--fluid-min-w)) * var(--fluid-min-w)
             ) *
-            1rem + (2.25 - 1.625) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+            1rem + (2.25 - 1.875) / (var(--fluid-max-w) - var(--fluid-min-w)) *
             100vw
       ),
       2.25rem
    );
    --space-40: clamp(
-      1.75rem,
+      2.0625rem,
       calc(
          (
-               1.75 - (2.5 - 1.75) / (var(--fluid-max-w) - var(--fluid-min-w)) *
-                  var(--fluid-min-w)
+               2.0625 - (2.5 - 2.0625) /
+                  (var(--fluid-max-w) - var(--fluid-min-w)) * var(--fluid-min-w)
             ) *
-            1rem + (2.5 - 1.75) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+            1rem + (2.5 - 2.0625) / (var(--fluid-max-w) - var(--fluid-min-w)) *
             100vw
       ),
       2.5rem
    );
    --space-44: clamp(
-      2rem,
+      2.25rem,
       calc(
          (
-               2 - (2.75 - 2) / (var(--fluid-max-w) - var(--fluid-min-w)) *
-                  var(--fluid-min-w)
+               2.25 - (2.75 - 2.25) /
+                  (var(--fluid-max-w) - var(--fluid-min-w)) * var(--fluid-min-w)
             ) *
-            1rem + (2.75 - 2) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+            1rem + (2.75 - 2.25) / (var(--fluid-max-w) - var(--fluid-min-w)) *
             100vw
       ),
       2.75rem
    );
    --space-48: clamp(
-      2.125rem,
+      2.4375rem,
       calc(
          (
-               2.125 - (3 - 2.125) / (var(--fluid-max-w) - var(--fluid-min-w)) *
-                  var(--fluid-min-w)
+               2.4375 - (3 - 2.4375) /
+                  (var(--fluid-max-w) - var(--fluid-min-w)) * var(--fluid-min-w)
             ) *
-            1rem + (3 - 2.125) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+            1rem + (3 - 2.4375) / (var(--fluid-max-w) - var(--fluid-min-w)) *
             100vw
       ),
       3rem
    );
    --space-52: clamp(
-      2.25rem,
+      2.625rem,
       calc(
          (
-               2.25 - (3.5 - 2.25) / (var(--fluid-max-w) - var(--fluid-min-w)) *
-                  var(--fluid-min-w)
+               2.625 - (3.25 - 2.625) /
+                  (var(--fluid-max-w) - var(--fluid-min-w)) * var(--fluid-min-w)
             ) *
-            1rem + (3.5 - 2.25) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+            1rem + (3.25 - 2.625) / (var(--fluid-max-w) - var(--fluid-min-w)) *
             100vw
       ),
-      3.5rem
+      3.25rem
    );
    --space-56: clamp(
-      2.5rem,
+      2.8125rem,
       calc(
          (
-               2.5 - (3.5 - 2.5) / (var(--fluid-max-w) - var(--fluid-min-w)) *
-                  var(--fluid-min-w)
+               2.8125 - (3.5 - 2.8125) /
+                  (var(--fluid-max-w) - var(--fluid-min-w)) * var(--fluid-min-w)
             ) *
-            1rem + (3.5 - 2.5) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+            1rem + (3.5 - 2.8125) / (var(--fluid-max-w) - var(--fluid-min-w)) *
             100vw
       ),
       3.5rem
    );
    --space-64: clamp(
-      2.75rem,
+      3.125rem,
       calc(
          (
-               2.75 - (4 - 2.75) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+               3.125 - (4 - 3.125) / (var(--fluid-max-w) - var(--fluid-min-w)) *
                   var(--fluid-min-w)
             ) *
-            1rem + (4 - 2.75) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+            1rem + (4 - 3.125) / (var(--fluid-max-w) - var(--fluid-min-w)) *
             100vw
       ),
       4rem
    );
    --space-72: clamp(
-      3rem,
+      3.5rem,
       calc(
          (
-               3 - (4.5 - 3) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+               3.5 - (4.5 - 3.5) / (var(--fluid-max-w) - var(--fluid-min-w)) *
                   var(--fluid-min-w)
             ) *
-            1rem + (4.5 - 3) / (var(--fluid-max-w) - var(--fluid-min-w)) * 100vw
+            1rem + (4.5 - 3.5) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+            100vw
       ),
       4.5rem
    );
    --space-80: clamp(
-      3.5rem,
+      3.875rem,
       calc(
          (
-               3.5 - (5 - 3.5) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+               3.875 - (5 - 3.875) / (var(--fluid-max-w) - var(--fluid-min-w)) *
                   var(--fluid-min-w)
             ) *
-            1rem + (5 - 3.5) / (var(--fluid-max-w) - var(--fluid-min-w)) * 100vw
+            1rem + (5 - 3.875) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+            100vw
       ),
       5rem
    );
    --space-88: clamp(
-      3.75rem,
+      4.25rem,
       calc(
          (
-               3.75 - (5.5 - 3.75) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+               4.25 - (5.5 - 4.25) / (var(--fluid-max-w) - var(--fluid-min-w)) *
                   var(--fluid-min-w)
             ) *
-            1rem + (5.5 - 3.75) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+            1rem + (5.5 - 4.25) / (var(--fluid-max-w) - var(--fluid-min-w)) *
             100vw
       ),
       5.5rem
    );
    --space-96: clamp(
-      4rem,
+      4.625rem,
       calc(
          (
-               4 - (6 - 4) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+               4.625 - (6 - 4.625) / (var(--fluid-max-w) - var(--fluid-min-w)) *
                   var(--fluid-min-w)
             ) *
-            1rem + (6 - 4) / (var(--fluid-max-w) - var(--fluid-min-w)) * 100vw
+            1rem + (6 - 4.625) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+            100vw
       ),
       6rem
    );
    --space-120: clamp(
-      4.5rem,
+      5.5rem,
       calc(
          (
-               4.5 - (7.5 - 4.5) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+               5.5 - (7.5 - 5.5) / (var(--fluid-max-w) - var(--fluid-min-w)) *
                   var(--fluid-min-w)
             ) *
-            1rem + (7.5 - 4.5) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+            1rem + (7.5 - 5.5) / (var(--fluid-max-w) - var(--fluid-min-w)) *
             100vw
       ),
       7.5rem
+   );
+   --space-160: clamp(
+      7rem,
+      calc(
+         (
+               7 - (10 - 7) / (var(--fluid-max-w) - var(--fluid-min-w)) *
+                  var(--fluid-min-w)
+            ) *
+            1rem + (10 - 7) / (var(--fluid-max-w) - var(--fluid-min-w)) * 100vw
+      ),
+      10rem
    );
 
    /* -- Em */
